@@ -429,7 +429,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = " [https://discord.gg/DgVWjX72fp]",
+		Name = "Sentinel",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "Sentinel Remastered"
