@@ -432,7 +432,7 @@ function Library:create(options)
 		Name = "Sentinel",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = " [https://discord.gg/DgVWjX72fp]"
+		Link = "Sentinel Remastered"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -738,7 +738,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. " put here 2"
+			Library.UrlLabel.Text = Library.Url .. " [https://discord.gg/DgVWjX72fp]"
 		end)
 	end
 
@@ -1246,7 +1246,7 @@ function Library:tab(options)
 			self.homePage.Visible = true
 			self.homeButton:tween{BackgroundTransparency = 0.15}
 			selectedTab = self.homeButton
-			Library.UrlLabel.Text = Library.Url .. " put here 1"	
+			Library.UrlLabel.Text = Library.Url .. " [https://discord.gg/DgVWjX72fp]"	
 		elseif tabButton == lastTab[2] then
 			lastTab = visible[#visible-1]
 			tab.Visible = false
