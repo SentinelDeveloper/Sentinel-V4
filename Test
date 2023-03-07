@@ -429,7 +429,7 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Sentinel Remastered",
+		Name = "Sentinel",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = " [https://discord.gg/DgVWjX72fp]"
@@ -738,7 +738,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. " [https://discord.gg/DgVWjX72fp]"
+			Library.UrlLabel.Text = Library.Url .. " put here 2"
 		end)
 	end
 
@@ -1156,7 +1156,7 @@ function Library:tab(options)
 			selectedTab = tabButton
 			tab.Visible = true
 			tabButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. " []" .. options.Name:upper()
+			Library.UrlLabel.Text = Library.Url .. " - " .. options.Name:upper()
 		end)
 
 		quickAccessButton.MouseEnter:connect(function()
@@ -1183,7 +1183,7 @@ function Library:tab(options)
 				selectedTab = tabButton
 				tab.Visible = true
 				tabButton.BackgroundTransparency = 0
-				Library.UrlLabel.Text = Library.Url .. " []" .. options.Name:upper()
+				Library.UrlLabel.Text = Library.Url .. " - " .. options.Name:upper()
 			end
 		end)
 	end
@@ -1246,20 +1246,20 @@ function Library:tab(options)
 			self.homePage.Visible = true
 			self.homeButton:tween{BackgroundTransparency = 0.15}
 			selectedTab = self.homeButton
-			Library.UrlLabel.Text = Library.Url .. " [https://discord.gg/DgVWjX72fp]"	
+			Library.UrlLabel.Text = Library.Url .. " put here 1"	
 		elseif tabButton == lastTab[2] then
 			lastTab = visible[#visible-1]
 			tab.Visible = false
 			lastTab[2]:tween{BackgroundTransparency = 0.15}
 			lastTab[1].Visible = true
 			selectedTab = lastTab[2]
-			Library.UrlLabel.Text = Library.Url .. " []" .. lastTab[3]:upper()
+			Library.UrlLabel.Text = Library.Url .. " - " .. lastTab[3]:upper()
 		else
 			tab.Visible = false
 			lastTab[2]:tween{BackgroundTransparency = 0.15}
 			lastTab[1].Visible = true
 			selectedTab = lastTab[2]
-			Library.UrlLabel.Text = Library.Url .. " []" .. lastTab[3]:upper()
+			Library.UrlLabel.Text = Library.Url .. " - " .. lastTab[3]:upper()
 		end
 	end)
 
