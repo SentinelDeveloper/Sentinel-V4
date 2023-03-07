@@ -7,7 +7,7 @@ local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
 
 local Library = {
-	Themes = {
+	Themes = {z
 		Legacy = {
 			Main = Color3.fromHSV(262/360, 60/255, 34/255),
 			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
@@ -1136,7 +1136,7 @@ function Library:tab(options)
 			selectedTab = tabButton
 			tab.Visible = true
 			tabButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. "/" .. options.Name:lower()
+			Library.UrlLabel.Text = Library.Url .. " []" .. options.Name:upper()
 		end)
 
 		quickAccessButton.MouseEnter:connect(function()
@@ -1163,7 +1163,7 @@ function Library:tab(options)
 				selectedTab = tabButton
 				tab.Visible = true
 				tabButton.BackgroundTransparency = 0
-				Library.UrlLabel.Text = Library.Url .. "/" .. options.Name:lower()
+				Library.UrlLabel.Text = Library.Url .. "/" .. options.Name:upper()
 			end
 		end)
 	end
@@ -1233,13 +1233,13 @@ function Library:tab(options)
 			lastTab[2]:tween{BackgroundTransparency = 0.15}
 			lastTab[1].Visible = true
 			selectedTab = lastTab[2]
-			Library.UrlLabel.Text = Library.Url .. "/" .. lastTab[3]:lower()
+			Library.UrlLabel.Text = Library.Url .. " []" .. lastTab[3]:upper()
 		else
 			tab.Visible = false
 			lastTab[2]:tween{BackgroundTransparency = 0.15}
 			lastTab[1].Visible = true
 			selectedTab = lastTab[2]
-			Library.UrlLabel.Text = Library.Url .. "/" .. lastTab[3]:lower()
+			Library.UrlLabel.Text = Library.Url .. " []" .. lastTab[3]:upper()
 		end
 	end)
 
