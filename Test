@@ -14,10 +14,7 @@
 █░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░███████░░░░░░███████
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
-edited: 1/26
-developers:
-v3rm AbstractPoo	discord Abstract#8007
-v3rm 0xDEITY		discord Deity#0228
+credits to mercury love u and cool ui <3
 
 ]]
 
@@ -616,7 +613,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 26, 0.5, 0),
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, -30, .6, 0),
-		Text = options.Link .. " [https://discord.gg/DgVWjX72fp]",
+		Text = options.Link .. "Sentinel",
 		Theme = {TextColor3 = "WeakText"},
 		TextSize = 14,
 		TextScaled = false,
